@@ -1,32 +1,25 @@
-# Capja 📸
+# Capja
 
-Privacy-first Chrome extension for screen capture, screen recording, and local media export.
+Privacy-first Chrome extension for visible-tab capture and local media export.
 
 ## Status
 
-Technical Spike completed.
+V1 approved and implemented: visible-tab screenshot, selected-area crop, PNG, JPEG, local download.
 
-Core feasibility has been investigated using Chrome Extension Manifest V3, Chrome APIs, and Web Media APIs.
+Not in V1: tab recording, screen/window recording, GIF, MP4, audio, upload, backend.
 
-### Verified
+## V1 permissions
 
-- Manifest V3
-- Visible tab capture
-- PNG export
-- JPEG export
-- WebM recording/export
-- Offscreen Documents
-- Native MediaRecorder
-- Video-only MP4 in Chromium test environment
+- `activeTab` only. Granted when the user clicks the Capja action.
+- No `<all_urls>`, `tabCapture`, or `desktopCapture`.
+- No always-on content script. Area selection is a temporary overlay on the captured image in an extension page.
 
-### Partially Verified / Blocked
+## Use
 
-- Tab recording and tab audio
-- Screen recording
-- Window recording
-- Restricted-page capture
-- Animated GIF export
-- MP4 with AAC audio
+1. Load this folder as an unpacked extension.
+2. Click the Capja action on the tab you want.
+3. Capture the visible tab, or select an area on the capture.
+4. The PNG or JPEG downloads locally. Capja does not upload it.
 
 ## Principles
 
@@ -36,12 +29,6 @@ Core feasibility has been investigated using Chrome Extension Manifest V3, Chrom
 - Native browser APIs first
 - Avoid unnecessary dependencies
 - No backend unless explicitly required
-
-## Development
-
-Capja is being developed as a Manifest V3 Chrome extension.
-
-Architecture and implementation decisions are based on documented Chrome API behavior and browser testing.
 
 ## License
 

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Capja</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <header>
+      <strong>Capja</strong>
+      <span>Local only</span>
+    </header>
+    <label>
+      Format
+      <select id="format">
+        <option value="png">PNG</option>
+        <option value="jpeg">JPEG</option>
+      </select>
+    </label>
+    <label id="quality-label">
+      JPEG quality
+      <input id="quality" type="range" min="0.5" max="1" step="0.05" value="0.92">
+    </label>
+    <button id="visible" type="button">Capture visible tab</button>
+    <button id="area" type="button">Select area</button>
+    <p id="status" role="status"></p>
+    <script src="export.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

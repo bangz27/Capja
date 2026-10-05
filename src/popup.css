@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  width: 240px;
+  color: #172033;
+  background: #f7f8fb;
+  font: 13px/1.4 system-ui, sans-serif;
+}
+
+header, label, button, #status {
+  display: block;
+  margin: 10px 12px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+header span, #status {
+  color: #5c6b80;
+}
+
+select, button, input {
+  width: 100%;
+  margin-top: 4px;
+}
+
+button {
+  border: 0;
+  border-radius: 6px;
+  padding: 8px 10px;
+  background: #1456c8;
+  color: white;
+  font: inherit;
+}
+
+button:disabled {
+  opacity: 0.6;
+}

@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Capja",
+  "version": "0.1.0",
+  "description": "Capture the visible tab or a selected area and save PNG or JPEG locally. Nothing is uploaded.",
+  "permissions": ["activeTab"],
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "action": {
+    "default_title": "Capja",
+    "default_popup": "src/popup.html"
+  }
+}

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Capja \u2014 select area</title>
+    <link rel="stylesheet" href="editor.css">
+  </head>
+  <body>
+    <header>
+      <strong>Select area</strong>
+      <span>Drag on the capture. The file stays on this device.</span>
+      <button id="save" type="button" disabled>Save selection</button>
+      <button id="cancel" type="button">Cancel</button>
+    </header>
+    <main>
+      <div id="stage">
+        <img id="capture" alt="Visible tab capture">
+        <div id="selection" hidden></div>
+      </div>
+    </main>
+    <p id="status" role="status"></p>
+    <script src="export.js"></script>
+    <script src="editor.js"></script>
+  </body>
+</html>
